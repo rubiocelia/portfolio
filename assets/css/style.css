@@ -251,6 +251,7 @@ body {
 }
 
 .content__page {
+  min-height: 100%;
   background-color: var(--color-principal);
   min-height: 100%;
   border-radius: 3.2rem;
@@ -329,4 +330,63 @@ body {
 .menu__option:hover .menu__overlay {
   opacity: 1;
   right: 100%;
+}
+
+/* sobre mi */
+
+.content__about {
+  height: 100%;
+  min-height: 100%;
+  padding: 6rem;
+  padding-right: 3rem;
+  overflow: auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+.about__header {
+  display: inline-block;
+  margin-bottom: 4.5rem;
+}
+
+.about__title {
+  font-size: 3.2rem;
+  position: relative;
+}
+
+.about__title:after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: -25px;
+  height: 30px;
+  width: 50px;
+  background-image: -webkit-radial-gradient(
+    center center,
+    var(--color-secondary),
+    var(--color-secondary) 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 6px 6px;
+}
+
+.title__color {
+  color: var(--color-secondary);
+}
+
+.about__personalInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.personalInfo__bio {
+  flex-basis: 55%;
+}
+
+.personalInfo__data {
+  flex-basis: 45%;
+  padding: 0 1.5rem;
 }
