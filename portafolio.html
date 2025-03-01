@@ -118,18 +118,166 @@
         <main class="layout__content">
             <section class="content__page content__portfolio">
 
-                <header class="resume__header">
-                    <h2 class="resume__title">
+                <header class="portfolio__header">
+                    <h2 class="portfolio__title">
                         Portafolio
                     </h2>
                 </header>
 
+                <nav class="portfolio__navbar">
+
+                    <ul class="portfolio__menu">
+                        <li class="portfolio__option portfolio__option--active">
+                            <a class="portfolio__link menu-tab" data-tab="all">Todo</a>
+                        </li>
+
+                        <li class="portfolio__option">
+                            <a class="portfolio__link menu-tab" data-tab="design">Diseño</a>
+                        </li>
+
+                        <li class="portfolio__option">
+                            <a class="portfolio__link menu-tab" data-tab="web">Web</a>
+                        </li>
+
+                        <li class="portfolio__option">
+                            <a class="portfolio__link menu-tab" data-tab="projects">Proyectos</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <section class="portfolio__gallery">
+                    <figure class="gallery__item" data-tab="design">
+                        <div class="gallery__containerImagen">
+                            <a href="https://www.figma.com/board/oPcgWousspV8D8KWxPXtpy/Fase-de-empatizar?node-id=0-1&t=2DeptiRKDOnSvyzJ-1"
+                                class="gallery__link" target="_blank">
+                                <img src="assets/img/diseño-3.jpg" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            Investigación y estrategia de diseño de EVENTIUM
+                        </figcaption>
+                        <i class="gallery__icon fa-brands fa-figma"></i>
+                        <span class="gallery__categorie">Diseño</span>
+                    </figure>
+
+                    <figure class="gallery__item" data-tab="design">
+                        <div class="gallery__containerImagen">
+                            <a href="https://www.figma.com/design/wBkMLG7I6qwy0rPuwFN2Je/dise%C3%B1o?node-id=13-12&t=2DeptiRKDOnSvyzJ-1"
+                                class="gallery__link" target="_blank">
+                                <img src="assets/img/diseño-1.jpg" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            Figma: Diseño Prototipo y Mockups de EVENTIUM
+                        </figcaption>
+                        <i class="gallery__icon fa-brands fa-figma"></i>
+                        <span class="gallery__categorie">Diseño</span>
+                    </figure>
+
+                    <figure class="gallery__item" data-tab="web">
+
+                        <div class="gallery__containerImagen">
+                            <a href="https://www.edelco.eu/" class="gallery__link" target="_blank">
+                                <img src="assets/img/web-1.png" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            Página web para Edelco
+                        </figcaption>
+                        <i class="gallery__icon fa-brands fa-wordpress"></i>
+                        <span class="gallery__categorie">Web</span>
+                    </figure>
+
+                    <figure class="gallery__item" data-tab="web">
+
+                        <div class="gallery__containerImagen">
+                            <a href="https://erizo.eus/" class="gallery__link" target="_blank">
+                                <img src="assets/img/web1.jpg" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            Web de Erizo
+                        </figcaption>
+                        <i class="gallery__icon fa-brands fa-wordpress"></i>
+                        <span class="gallery__categorie">Web</span>
+                    </figure>
+
+                    <figure class="gallery__item" data-tab="web">
+
+                        <div class="gallery__containerImagen">
+                            <a href="http://eagle-glasses.com/" class="gallery__link" target="_blank">
+                                <img src="assets/img/articulo-1.jpg" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            Reediseño para Eagle Glasses
+                        </figcaption>
+                        <i class="gallery__icon fa-brands fa-wordpress"></i>
+                        <span class="gallery__categorie">Web</span>
+                    </figure>
+
+                    <figure class="gallery__item" data-tab="projects">
+
+                        <div class="gallery__containerImagen">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/articulo-1.jpg" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            proyecto 1
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-laptop-code"></i>
+                        <span class="gallery__categorie">Proyecto</span>
+
+                    </figure>
+
+                    <figure class="gallery__item" data-tab="projects">
+
+                        <div class="gallery__containerImagen">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/articulo-1.jpg" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            proyecto 2
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-laptop-code"></i>
+                        <span class="gallery__categorie">Proyecto</span>
+
+                    </figure>
+
+                    <figure class="gallery__item" data-tab="projects">
+                        <div class="gallery__containerImagen">
+                            <a href="#" class="gallery__link">
+                                <img src="assets/img/articulo-1.jpg" class="gallery__imagen" alt="">
+                            </a>
+                        </div>
+
+                        <figcaption class="gallery__title">
+                            proyecto 3
+                        </figcaption>
+                        <i class="gallery__icon fa-solid fa-laptop-code"></i>
+                        <span class="gallery__categorie">Proyecto</span>
+
+                    </figure>
+
+                </section>
 
             </section>
         </main>
 
     </div>
 
+    <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>
