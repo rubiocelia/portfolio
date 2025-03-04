@@ -72,6 +72,7 @@ label {
   --color-text: #555;
 
   --color-background-certificates: #f5f5f5;
+  --color-background-contact: #fcfcfc;
 }
 
 /* estilos generales */
@@ -339,7 +340,8 @@ body {
 
 .content__about,
 .content__resume,
-.content__portfolio {
+.content__portfolio,
+.content__contact {
   height: 100%;
   min-height: 100%;
   padding: 6rem;
@@ -351,21 +353,24 @@ body {
 
 .about__header,
 .resume__header,
-.portfolio__header {
+.portfolio__header,
+.contact__header {
   display: inline-block;
   margin-bottom: 4.5rem;
 }
 
 .about__title,
 .resume__title,
-.portfolio__title {
+.portfolio__title,
+.contact__title {
   font-size: 3.2rem;
   position: relative;
 }
 
 .about__title::after,
 .resume__title::after,
-.portfolio__title::after {
+.portfolio__title::after,
+.contact__title::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -418,6 +423,7 @@ body {
   color: var(--color-secondary);
   font-weight: 600;
 }
+
 /* servicios */
 
 .about__services {
@@ -483,18 +489,21 @@ body {
 
 /* curriculum */
 
-.resume__subheader {
+.resume__subheader,
+.contact__formHeader {
   display: inline-block;
   padding-right: 1.2rem;
   margin-bottom: 2.5rem;
   position: relative;
 }
 
-.resume__subtitle {
+.resume__subtitle,
+.formHeader__title {
   font-size: 2.1rem;
 }
 
-.resume__subtitle::after {
+.resume__subtitle::after,
+.formHeader__title::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -819,7 +828,7 @@ body {
   line-height: 3rem;
   background-color: var(--color-principal);
   color: var(--color-secondary);
-  transition: all 450ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .gallery__categorie {
@@ -837,4 +846,116 @@ body {
 .gallery__item:hover .gallery__categorie,
 .gallery__item:hover .gallery__icon {
   opacity: 1;
+}
+
+/* contacto */
+
+.contact__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__info {
+  flex-basis: 33%;
+  padding: 0 1.5rem;
+}
+
+.contact__data {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  background-color: var(--color-background-contact);
+  border: 1px solid var(--color-icon);
+  border-radius: 3.3rem 0 3.3rem 0;
+}
+
+.contact__icon {
+  font-size: 3.3rem;
+  color: var(--color-secondary);
+}
+
+.contact__subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact__formBox {
+  flex-basis: 66%;
+  padding: 0 1.5rem;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__left {
+  flex-basis: 47%;
+  margin-right: 4rem;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.form__input {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  display: block;
+  border: 1px solid var(--color-icon);
+  border-radius: 0.5rem;
+  outline: none;
+  box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
+  line-height: 2.1rem;
+}
+
+.form__input:focus {
+  border: 1px solid var(--color-secondary);
+}
+
+.form__label {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  z-index: -1;
+  color: var(--color-icon);
+  transition: all 300ms ease-in-out;
+}
+
+.form__input:focus ~ label {
+  top: -2rem;
+  left: 0;
+  z-index: 1;
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+}
+
+.form__input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form__input::-moz-placeholder {
+  color: transparent;
+}
+
+.form__right {
+  flex-basis: 50%;
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.form__group--textarea {
+  height: 100%;
+}
+
+.form__input--textarea {
+  display: block;
+  height: 100%;
+  resize: none;
 }

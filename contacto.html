@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/Hind/hind.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/CELIARUBIO.png" type="image/png">
+    <title>Portafolio - Celia Rubio</title>
+</head>
+
+<body>
+
+    <!-- Layout principal -->
+    <div class="layout">
+
+        <!-- barra lateral -->
+        <aside class="layout__aside">
+
+            <section class="aside__userInfo">
+
+                <!-- informacion general -->
+
+                <div class="userInfo__general">
+                    <div class="userInfo__containerImagen">
+                        <img src="assets/img/Celia.jpg" class="userInfo__imagen" alt="Foto de perfil">
+                    </div>
+
+                    <h2 class="userInfo__name">Celia Rubio Pais</h2>
+                    <h4 class="userInfo__job">Desarrolladora Web</h4>
+                </div>
+
+                <!-- menu navegacion -->
+
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link ">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link ">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Currículum</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link ">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link menu__linkActive">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- redes sociales -->
+                <div class="userInfo__links">
+                    <ul class="links__social">
+
+                        <li class="social__option">
+                            <a href="https://github.com/rubiocelia" class="social__link" target="_blank">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/celia-rubio-pais-7893a82b1/" class="social__link"
+                                target="_blank">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- boton cv -->
+                <div class="userInfo__buttons">
+                    <a href="assets/img/CV_CeliaRubio.pdf" class="userInfo__btn" target="_blank">Descargar CV</a>
+                </div>
+
+                <!-- footer -->
+                <footer class="userInfo__footer">
+                    &copy; 2025 Celia Rubio WEB
+                </footer>
+            </section>
+
+        </aside>
+
+        <!-- contenido principal -->
+        <main class="layout__content">
+            <section class="content__page content__contact">
+
+                <header class="contact__header">
+                    <h2 class="contact__title">
+                        Contacto
+                    </h2>
+                </header>
+
+                <div class="contact__container">
+
+                    <section class="contact__info">
+
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-location-dot"></i>
+                            <h2 class="contact__subtitle">Madrid, España</h2>
+                        </div>
+
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-phone"></i>
+                            <h2 class="contact__subtitle">+34 665 30 80 60</h2>
+                        </div>
+
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-envelope"></i>
+                            <h2 class="contact__subtitle">rubiopaiscelia@gmail.com</h2>
+                        </div>
+
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-circle-check"></i>
+                            <h2 class="contact__subtitle">Desarrolladora Web</h2>
+                        </div>
+
+                    </section>
+
+                    <section class="contact__formBox">
+
+                        <div class="contact__map">
+
+                        </div>
+
+                        <header class="contact__formHeader">
+                            <h3 class="formHeader__title">
+                                ¿Cómo puedo <span class="subtitle__color">ayudarte?</span>
+                            </h3>
+                        </header>
+
+                        <form action="" class="contact__form">
+                            <div class="form__container">
+
+                                <section class="form__left">
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="name" required
+                                            placeholder="Nombre">
+                                        <label for="name" class="form__name form__label">Nombre</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" name="email" required
+                                            placeholder="Email">
+                                        <label for="email" class="form__name form__label">Email</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="subject" required
+                                            placeholder="Asunto">
+                                        <label for="subject" class="form__name form__label">Asunto</label>
+                                    </div>
+
+                                </section>
+
+                                <section class="form__right">
+
+                                    <div class="form__group form__group--textarea">
+                                        <textarea class="form__input form__input--textarea" name="message" required
+                                            placeholder="Mensaje"></textarea>
+                                        <label for="message" class="form__label">Mensaje</label>
+                                    </div>
+
+                                </section>
+                            </div>
+
+                            <input type="submit" class="form__button" value="Enviar mensaje">
+
+                        </form>
+
+                    </section>
+                </div>
+
+
+            </section>
+        </main>
+
+    </div>
+
+    <script src="assets/js/portfolio.js"></script>
+</body>
+
+</html>
