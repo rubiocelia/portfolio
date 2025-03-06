@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/fonts/Hind/hind.css">
     <link rel="stylesheet" href="assets/css/scroll.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
     <link rel="icon" href="assets/img/CELIARUBIO.png" type="image/png">
     <title>Portafolio - Celia Rubio</title>
 </head>
@@ -108,6 +110,12 @@
 
         </aside>
 
+        <!-- menu responsive -->
+        <div class="layout__menu-toggle">
+            <i class="toggle__icon fa-solid fa-bars"></i>
+            <i class="toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
         <!-- contenido principal -->
         <main class="layout__content">
             <section class="content__page content__contact">
@@ -120,7 +128,18 @@
 
                 <div class="contact__container">
 
+                    <header class="contact__formHeader">
+                        <h3 class="formHeader__title">
+                            ¿Cómo puedo <span class="subtitle__color">ayudarte?</span>
+                        </h3>
+                    </header>
+
                     <section class="contact__info">
+
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-circle-check"></i>
+                            <h2 class="contact__subtitle">Desarrolladora Web</h2>
+                        </div>
 
                         <div class="contact__data">
                             <i class="contact__icon fa-solid fa-location-dot"></i>
@@ -136,66 +155,6 @@
                             <i class="contact__icon fa-solid fa-envelope"></i>
                             <h2 class="contact__subtitle">rubiopaiscelia@gmail.com</h2>
                         </div>
-
-                        <div class="contact__data">
-                            <i class="contact__icon fa-solid fa-circle-check"></i>
-                            <h2 class="contact__subtitle">Desarrolladora Web</h2>
-                        </div>
-
-                    </section>
-
-                    <section class="contact__formBox">
-
-                        <div class="contact__map">
-
-                        </div>
-
-                        <header class="contact__formHeader">
-                            <h3 class="formHeader__title">
-                                ¿Cómo puedo <span class="subtitle__color">ayudarte?</span>
-                            </h3>
-                        </header>
-
-                        <form action="" class="contact__form">
-                            <div class="form__container">
-
-                                <section class="form__left">
-
-                                    <div class="form__group">
-                                        <input type="text" class="form__input" name="name" required
-                                            placeholder="Nombre">
-                                        <label for="name" class="form__name form__label">Nombre</label>
-                                    </div>
-
-                                    <div class="form__group">
-                                        <input type="email" class="form__input" name="email" required
-                                            placeholder="Email">
-                                        <label for="email" class="form__name form__label">Email</label>
-                                    </div>
-
-                                    <div class="form__group">
-                                        <input type="text" class="form__input" name="subject" required
-                                            placeholder="Asunto">
-                                        <label for="subject" class="form__name form__label">Asunto</label>
-                                    </div>
-
-                                </section>
-
-                                <section class="form__right">
-
-                                    <div class="form__group form__group--textarea">
-                                        <textarea class="form__input form__input--textarea" name="message" required
-                                            placeholder="Mensaje"></textarea>
-                                        <label for="message" class="form__label">Mensaje</label>
-                                    </div>
-
-                                </section>
-                            </div>
-
-                            <input type="submit" class="form__button" value="Enviar mensaje">
-
-                        </form>
-
                     </section>
                 </div>
 
