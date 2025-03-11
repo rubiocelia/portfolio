@@ -34,6 +34,7 @@
   body {
     background-image: none;
     position: static;
+    overflow: hidden;
   }
 
   .layout {
@@ -83,6 +84,7 @@
   .layout__content {
     border-radius: 0;
     background-color: transparent;
+    height: 100%;
   }
 
   .layout__aside {
