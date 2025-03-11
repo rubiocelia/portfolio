@@ -47,7 +47,8 @@
   }
 
   .layout__menu-toggle {
-    display: none;
+    z-index: 9999;
+    display: block;
     position: absolute;
     width: 4.8rem;
     height: 4.8rem;
@@ -63,8 +64,20 @@
     transition: all 300ms ease-in-out;
   }
 
+  .toggle__icon {
+    color: var(--color-principal);
+    display: block;
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    transition: all 300ms ease-in-out;
+  }
+
+  .fa-bars {
+    opacity: 1;
+  }
   .fa-xmark {
-    display: none;
+    opacity: 0;
   }
 
   .layout__content {
@@ -92,6 +105,17 @@
   .layout__menu {
     position: static;
     margin: 3rem 0;
+  }
+
+  .layout__aside--visible {
+    width: 100%;
+    margin-right: 0;
+    opacity: 1;
+  }
+
+  .layout__aside--hidden {
+    margin-right: -100%;
+    opacity: 0;
   }
 
   .userInfo__containerImagen {
